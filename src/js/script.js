@@ -22,7 +22,6 @@ $(document).ready(function(){
         let month = "";
         let day = "";
         let futureDates = [];
-        console.log(today.getMonth());
 
         for (let i = 0; i < 6; i++) {
             switch (today.getMonth()) {
@@ -101,7 +100,6 @@ $(document).ready(function(){
                 const longitude = result.data[0].longitude;
 
                 $.get(`${openWeatherUrl}lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&units=metric&appid=${openWeatherKey}`, function(result) {
-                    console.log(result.current.weather[0].main);
                     displayCurrentWeather(result);
                     displayWeatherIcon(result.current.weather[0].main);
                     if(!$.trim($(".forecast-container").html())) insertCards();

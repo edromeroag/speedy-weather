@@ -176,25 +176,25 @@ $(document).ready(function(){
     
         switch(currentCondition.toLowerCase()) {
             case "thunderstorm":
-                $("#weather-icon").attr("src", "./assets/SVG/thunder.svg");
+                $("#weather-icon").attr("src", "../images/SVG/thunder.svg");
                 break;
             case "drizzle":
             case "rain":
-                $("#weather-icon").attr("src", "./assets/SVG/rain.svg");
+                $("#weather-icon").attr("src", "../images/SVG/rain.svg");
                 break;
             case "snow":
-                $("#weather-icon").attr("src", "./assets/SVG/snow.svg");
+                $("#weather-icon").attr("src", "../images/SVG/snow.svg");
                 break;
             case "clouds":
-                if (currentTime == "day") $("#weather-icon").attr("src", "./assets/SVG/cloudy-day.svg");
-                else $("#weather-icon").attr("src", "./assets/SVG/cloudy-night.svg");
+                if (currentTime == "day") $("#weather-icon").attr("src", "../images/SVG/cloudy-day.svg");
+                else $("#weather-icon").attr("src", "../images/SVG/cloudy-night.svg");
                 break;
             case "clear":
-                if (currentTime == "day") $("#weather-icon").attr("src", "./assets/SVG/sunny.svg");
-                else $("#weather-icon").attr("src", "./assets/SVG/clear-night.svg");
+                if (currentTime == "day") $("#weather-icon").attr("src", "../images/SVG/sunny.svg");
+                else $("#weather-icon").attr("src", "../images/SVG/clear-night.svg");
                 break;
             default:
-                $("#weather-icon").attr("src", "./assets/SVG/wind.svg");
+                $("#weather-icon").attr("src", "../images/SVG/wind.svg");
                 break;
         }
     }

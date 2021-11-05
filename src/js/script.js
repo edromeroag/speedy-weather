@@ -10,9 +10,7 @@ $(document).ready(function(){
     const getCurrentDate = () => {
         const today = new Date();
         let minutes = today.getMinutes();
-        console.log(minutes);
         if (minutes < 10) minutes = `0${minutes}`;
-        console.log(minutes);
 
         if (today.getHours() > 12) return `${today.getHours() - 12}:${minutes} p.m ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
         if (today.getHours() == 0) return `${today.getHours() + 12 }:${minutes} a.m ${monthNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`

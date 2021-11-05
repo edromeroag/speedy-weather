@@ -1,8 +1,8 @@
 $(document).ready(function(){
     const positionStackKey = "2cbc1624cc721b8a57999bd909b90f3e";
-    const positionStackUrl = `http://api.positionstack.com/v1/forward?access_key=${positionStackKey}&query=`;
+    const positionStackUrl = `https://api.positionstack.com/v1/forward?access_key=${positionStackKey}&query=`;
     const openWeatherKey = "b1f7b1c8cfc3521c9192c855eb16bfa9";
-    const openWeatherUrl = `http://api.openweathermap.org/data/2.5/onecall?`;
+    const openWeatherUrl = `https://api.openweathermap.org/data/2.5/onecall?`;
     const monthNames = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"];
 
